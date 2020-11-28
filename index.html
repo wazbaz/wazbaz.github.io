@@ -1,1 +1,36 @@
-wAzBaZ
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>wAzBaZ</title>
+    <style>
+      div.waz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      img.waz {
+        max-width: 80%;
+        max-height: 80vh;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="waz">
+      <h1>WAZ</h1>
+      <img id="waz" class="waz" src="wazbaz1.webp" />
+      <h1>BAZ</h1>
+    </div>
+    <script>
+      const paths = ["wazbaz1.webp", "wazbaz2.webp", "wazbaz3.webp"];
+      const path = paths[Math.floor(Math.random() * paths.length)];
+      document.getElementById("waz").src = path;
+    </script>
+  </body>
+</html>
