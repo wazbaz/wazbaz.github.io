@@ -24,13 +24,16 @@
   <body>
     <div class="waz">
       <h1>WAZ</h1>
-      <img id="waz" class="waz" src="wazbaz1.webp" />
-      <h1>BAZ</h1>
+      <img id="im" class="waz" src="" />
+      <h1 id="baz">BAZ</h1>
     </div>
     <script>
       const paths = ["wazbaz1.webp", "wazbaz2.webp", "wazbaz3.webp"];
       const path = paths[Math.floor(Math.random() * paths.length)];
-      document.getElementById("waz").src = path;
+
+      setTimeout(function(){
+          document.getElementById("im").src = path;
+      }, 1000);
     </script>
   </body>
 </html>
